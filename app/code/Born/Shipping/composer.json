@@ -1,0 +1,21 @@
+{
+    "name": "born/module-shipping",
+    "description": "PO box validation ",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "giovanni.venegas@borngroup.com",
+            "name": "Giovanni Venegas"
+        }],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Born\\Shipping\\": ""
+        }
+    }
+}

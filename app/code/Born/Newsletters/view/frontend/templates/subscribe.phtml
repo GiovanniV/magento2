@@ -1,0 +1,49 @@
+<?php
+/**
+ * Copyright (c) 2018 BORN Group, Inc. All rights reserved
+ * @author Matisse Laurel
+ *
+ */
+/** @var \Born\Newsletter\Block\Subscribe $block */
+?>
+<div class="block newsletter footer__links col-xs-12 col-md">
+    <div class="title"><strong><?php /* @escapeNotVerified */ echo __('Newsletter') ?></strong></div>
+    <div class="content">
+        <form class="form subscribe" novalidate
+              action="<?php echo $block->escapeUrl($block->getFormActionUrl()) ?>"
+              method="post"
+              data-mage-init='{"validation": {"errorClass": "mage-error"}}'
+              id="newsletter-validate-detail">
+            <div class="field newsletter">
+                <label class="label" for="newsletter"><span><?php echo $block->escapeHtml(__('E-mail Address')) ?></span></label>
+                <div class="control">
+                    <input name="email" type="email" id="newsletter" placeholder="<?php echo $block->escapeHtml(__('E-mail Address')) ?>" data-validate="{required:true, 'validate-email':true}"/>
+                </div>
+            </div>
+            <div class="field frequency">
+                <label class="label" for="frequency"><span><?php echo $block->escapeHtml(__('Frequency')) ?></span></label>
+                <div class="control">
+                	Daily
+                	<input type="radio" class="radio required-entry" data-validate="{'validate-one-required-by-name':true}" name="frequency" value="daily" checked="checked" />
+                	Weekly
+                	<input type="radio" class="radio required-entry" data-validate="{'validate-one-required-by-name':true}" name="frequency" value="weekly" />
+                	Monthly
+                	<input type="radio" class="radio required-entry" data-validate="{'validate-one-required-by-name':true}" name="frequency" value="monthly" />
+                </div>
+            </div>
+            <div class="field disclaimer_agreed">
+                <label class="label" for="disclaimer_agreed"><span><?php echo $block->escapeHtml(__('Disclaimer')) ?></span></label>
+                <div class="control">
+                	<input type="checkbox" name="disclaimer_agreed" data-validate="{required:true}" value="yes">
+                	<p><?php echo $block->escapeHtml(__('I agree that K&N Engineering may collect,use and disclose the personal data which I have provided, for providing marketing material that I have agreed to recieve,in accordance with the K&N Engineering data protection policy.')) ?></p>
+                </div>
+            </div>
+            
+            <div class="actions">
+                <button class="action subscribe primary" title="<?php echo $block->escapeHtml(__('Subscribe')) ?>" type="submit">
+                    <span><?php echo $block->escapeHtml(__('>')) ?></span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

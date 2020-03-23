@@ -1,0 +1,22 @@
+{
+    "name": "born/module-customer",
+    "description": "Address Book - Delete Additional Address not working",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "giovanni",
+            "email": "giovanni@vanguardsd.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Born\\Customer\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

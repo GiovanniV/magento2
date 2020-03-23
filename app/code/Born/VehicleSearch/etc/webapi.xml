@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+	<route method="POST" url="/V1/VehicleSearch/save">
+		<service class="Born\VehicleSearch\Api\SearchRepositoryInterface" method="save"/>
+		<resources>
+			<resource ref="Born_VehicleSearch::vehicle_search_save"/>
+		</resources>
+	</route>
+	<route method="POST" url="/V1/VehicleSearch/getList">
+		<service class="Born\VehicleSearch\Api\SearchRepositoryInterface" method="getList"/>
+		<resources>
+			<resource ref="anonymous"/>
+		</resources>
+	</route>
+</routes>

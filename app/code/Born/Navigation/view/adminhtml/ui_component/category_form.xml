@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="navigation_settings">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="label" xsi:type="string" translate="true">Navigation Settings</item>
+                <item name="collapsible" xsi:type="boolean">true</item>
+                <item name="sortOrder" xsi:type="number">20</item>
+            </item>
+        </argument>
+
+        <field name="category_link" sortOrder="30" formElement="input">
+            <settings>
+                <dataType>string</dataType>
+                <label translate="true">Category Link</label>
+            </settings>
+        </field>
+
+        <field name="category_link_text" sortOrder="40" formElement="input">
+            <settings>
+                <dataType>string</dataType>
+                <label translate="true">Category Link Text</label>
+            </settings>
+        </field>
+
+    </fieldset>
+</form>

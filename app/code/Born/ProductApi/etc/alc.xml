@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright (c) 2018 BORN Group, Inc. All rights reserved
+  ~ @author Giovanni
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Born_ProductApi::product_api" title="Born ProductApi" translate="title" sortOrder="150">
+                    <resource id="Born_ProductApi::price_update" title="ProductApi Update" translate="title" sortOrder="10" />
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

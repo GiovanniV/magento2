@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * module.xml
+ *
+ * @copyright Copyright © 2018 Born Group. All rights reserved.
+ * @author    Born Support <support@borngroup.com>
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Born_WebsiteStoreCreator" setup_version="1.0.22">
+    <sequence>
+        <module name="Born_CountryISO" />
+        <module name="Amasty_MultiInventory" />
+    </sequence>
+    </module>
+</config>

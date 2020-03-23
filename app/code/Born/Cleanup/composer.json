@@ -1,0 +1,22 @@
+{
+    "name": "born/module-Cleanup",
+    "description": "removed product selected attribute ",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "giovanni.venegas@borngroup.com",
+            "name": "giovanni venegas"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Born\\Cleanup\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

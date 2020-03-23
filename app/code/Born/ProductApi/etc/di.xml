@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<!--
+  ~ Copyright (c) 2018 BORN Group, Inc. All rights reserved
+  ~ @author Giovanni
+  ~
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Born\ProductApi\Api\ProductManagementInterface" type="Born\ProductApi\Model\ProductManagement"></preference>
+</config>

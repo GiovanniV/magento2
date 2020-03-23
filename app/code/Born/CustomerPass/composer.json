@@ -1,0 +1,22 @@
+{
+    "name": "born/module-customerpass",
+    "description": "Creating module to allow max length of customer passwprd",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+             "name": "giovanni",
+            "email": "giovanni@vanguardsd.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Born\\CustomerPass\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

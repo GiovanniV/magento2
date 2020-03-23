@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		 <tab id="intel" translate="label" sortOrder="100">
+            <label>Intel</label>
+        </tab>
+		<section id="born" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+			<label>Country Restricted products</label>
+			<tab>intel</tab>
+			<resource>Born_RestrictedProducts::config_born_restrictedproducts</resource>
+			<group id="born" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>Country Restricted </label>
+				<field id="enable" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+					<label>Enable</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+			<field id="geolocation" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Geolocation api</label>
+					<comment>Geolocation api url</comment>
+			</field>
+			 <field id="username" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>UserName</label>
+                </field>
+				
+			 <field id="password" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>key</label>
+
+                </field>
+			</group>
+		</section>
+	</system>
+</config>

@@ -1,0 +1,36 @@
+<?php
+/**
+ * Copyright (c) 2018 BORN Group, Inc. All rights reserved
+ * @author Giovanni
+ */
+
+echo 'dddd='. $block->getData('viewModel')->getStatus();
+?>
+
+<script>
+	requirejs([
+	'jquery',
+	'jquery/ui',
+	'jquery/validate',
+	'mage/translate'
+	], function($){
+	'use strict';
+	$('#street_1').attr('data-validate','{"required":true,"validate-pobox":true}');
+	$.validator.addMethod(
+	"validate-pobox",
+	function(value, element) {
+	var regex2 = /\bP(ost|ostal)?([ \.]*(O|0)(ffice)?)?([ \.]*Box)?\b/ig;
+	if(value.match(regex2))
+	{
+	return false; 
+	}
+	else
+	{
+	return true;    
+
+	}
+	},
+	$.mage.__('We cannot ship to your P.O. Please check the button to ship to a different address.')
+	);
+	});
+</script>

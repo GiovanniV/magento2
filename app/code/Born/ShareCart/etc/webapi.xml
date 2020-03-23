@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+	<route method="GET" url="/V1/sharecart/getcartitems">
+		<service class="Born\ShareCart\Api\GetCartItemsManagementInterface" method="getGetCartItems"/>
+		<resources>
+	<resource ref="anonymous"/>
+			<!--<resource ref="Born_ShareCart::manage" />-->
+		</resources>
+	</route>
+	<route method="GET" url="/V1/sharecart/getsessiondata">
+		<service class="Born\ShareCart\Api\GetSessionDataManagementInterface" method="getGetSessionData"/>
+		<resources>
+			<resource ref="anonymous"/>
+			<!--<resource ref="Born_ShareCart::manage" />-->
+		</resources>
+	</route>
+</routes>

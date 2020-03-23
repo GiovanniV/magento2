@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Born\DealerSearchApi\Api\SearchCategoryRepositoryInterface" type="Born\DealerSearchApi\Model\SearchCategoryRepository"/>
+	<preference for="Born\DealerSearchApi\Api\Data\SearchCategoryInterface" type="Born\DealerSearchApi\Model\Data\SearchCategory"/>
+	<preference for="Born\DealerSearchApi\Api\Data\SearchCategorySearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<preference for="Born\DealerSearchApi\Api\SearchMarketLineRepositoryInterface" type="Born\DealerSearchApi\Model\SearchMarketLineRepository"/>
+	<preference for="Born\DealerSearchApi\Api\Data\SearchMarketLineInterface" type="Born\DealerSearchApi\Model\Data\SearchMarketLine"/>
+	<preference for="Born\DealerSearchApi\Api\Data\SearchMarketLineSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<preference for="Born\DealerSearchApi\Api\SearchMasterRepositoryInterface" type="Born\DealerSearchApi\Model\SearchMasterRepository"/>
+	<preference for="Born\DealerSearchApi\Api\Data\SearchMasterInterface" type="Born\DealerSearchApi\Model\Data\SearchMaster"/>
+	<preference for="Born\DealerSearchApi\Api\Data\SearchMasterSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<preference for="Born\DealerSearchApi\Api\SearchProductRepositoryInterface" type="Born\DealerSearchApi\Model\SearchProductRepository"/>
+	<preference for="Born\DealerSearchApi\Api\Data\SearchProductInterface" type="Born\DealerSearchApi\Model\Data\SearchProduct"/>
+	<preference for="Born\DealerSearchApi\Api\Data\SearchProductSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<preference for="Born\DealerSearchApi\Api\SearchProductRestrictRepositoryInterface" type="Born\DealerSearchApi\Model\SearchProductRestrictRepository"/>
+	<preference for="Born\DealerSearchApi\Api\Data\SearchProductRestrictInterface" type="Born\DealerSearchApi\Model\Data\SearchProductRestrict"/>
+	<preference for="Born\DealerSearchApi\Api\Data\SearchProductRestrictSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<preference for="Born\DealerSearchApi\Api\SearchZipRepositoryInterface" type="Born\DealerSearchApi\Model\SearchZipRepository"/>
+	<preference for="Born\DealerSearchApi\Api\Data\SearchZipInterface" type="Born\DealerSearchApi\Model\Data\SearchZip"/>
+	<preference for="Born\DealerSearchApi\Api\Data\SearchZipSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<preference for="Born\DealerSearchApi\Api\ProductNumInterface"  type="Born\DealerSearchApi\Model\DealerSearch" />
+</config>

@@ -1,0 +1,11 @@
+<?php
+$modelView =  $block->getData('viewModel');
+?>
+<h1>Jobs</h1>
+<ul>
+    <?php foreach ($modelView->getJobList() as $job) {
+    ?>
+    <a href="<?= $block->getUrl('news/jobs') . '?id=' . $job->getJobId()?>"><li><?= $job->getTitle()?></li></a>
+    <?php
+}?>
+</ul>

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!-- Copyright © 2018 BORN Commerce, Inc. All rights reserved. -->
+<!-- See COPYING.txt for license details. -->
+
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget class="Born\Carousel\Block\Widget\Carousel" id="Born_Carousel_Block_Widget_Carousel">
+        <label>Carousel Banner</label>
+        <description>Display Carousel Images</description>
+        <parameters>
+            <parameter name="uiComponent" xsi:type="text" required="false" visible="false">
+                <label translate="true">UI Component</label>
+                <value>widget_carousel_banner</value>
+            </parameter>
+            <parameter name="title" sort_order="10" visible="true" xsi:type="text">
+                <label>Title</label>
+            </parameter>
+            <parameter xsi:type="multiselect" name="carousels" visible="true" source_model="Born\Carousel\Model\Config\Source\Carousel">
+                <label translate="true">Restrict by Banner Types</label>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

@@ -1,0 +1,51 @@
+<?php
+/**
+ * Copyright © 2018 BORN Commerce, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var \Born\Carousel\Block\Widget\Carousel $block */
+?>
+
+
+<?php
+$items = $block->getCarouselSlides();
+if (count($items) == 1): ?>
+    <div class="carousel__item">
+<?php elseif (count($items) > 1): ?>
+    <div class="carousel" data-mage-init='{"born/carousel":{}}'>
+
+        <?php foreach ($items as $item): ?>
+            <?php $file_url = $block->getImageSrc($item['background_image']) ?>
+            <?php $file_url_mobile = $block->getImageSrc($item['background_image_mobile']) ?>
+
+            <div id="slide-<?php echo $item['id'] ?>" class="carousel__item justify-<?php echo $item['alignment']; ?>">
+                <?php if ($file_url): ?>
+                    <img src="<?php echo $file_url ?>"/>
+                <?php endif ?>
+
+                <div class="carousel__content">
+                    <?php if (isset($item['title'])): ?>
+                    <h2><?php echo __($item['title']); ?></h2>
+                    <?php endif; ?>
+
+                    <?php if (isset($item['body'])): ?>
+                    <p><?php echo $block->escapeHtml($item['body']); ?></p>
+                    <?php endif; ?>
+
+                    <?php if (isset($item['cta_link'])): ?>
+                    <a href="<?php echo $item['cta_link']; ?>">
+                        <span><?php echo __($item['cta_text']); ?><span>
+                    </a>
+                    <?php endif; ?>
+
+                    <?php if (!isset($item['cta_link']) && isset($item['cta_text'])): ?>
+                        <span><?php echo __($item['cta_text']); ?><span>
+                    <?php endif; ?>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    </div>
+    <?php
+endif;
+?>

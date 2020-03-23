@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Born_Catalog
+ *
+ * PHP version 5.x-7.x
+ *
+ * @category  PHP
+ * @package   Born\Catalog
+ * @author    Born Support <support@borngroup.com>
+ * @copyright 2018 Copyright BORN Commerce Pvt Ltd, https://www.borngroup.com/
+ * @license   https://www.borngroup.com/ Private
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Catalog\Block\Product\View\Attributes" type="Born\Catalog\Block\Product\View\Attributes" />
+</config>

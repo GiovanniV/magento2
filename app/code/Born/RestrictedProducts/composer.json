@@ -1,0 +1,22 @@
+{
+    "name": "born/module-restrictedproducts",
+    "description": "country restricted Product  based on geo location IP",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "giovanni",
+            "email": "giovanni@vanguardsd.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Born\\RestrictedProducts\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

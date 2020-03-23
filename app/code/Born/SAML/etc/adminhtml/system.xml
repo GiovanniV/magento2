@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="saml" translate="label" sortOrder="10">
+            <label>SAML</label>
+        </tab>
+        <section id="saml" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+            <label>Integration</label>
+            <tab>saml</tab>
+            <resource>Born_SAML::integration</resource>
+            <group id="general_settings" translate="label" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="0">
+                <label>SAML General Settings</label>
+                <field id="enabled" translate="label" type="select" showInDefault="1" canRestore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="environment" translate="label" type="select" showInDefault="1">
+                    <label>Environment</label>
+                    <source_model>Born\SAML\Model\Config\Source\Environment</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+	<section id="customer">	
+		 <group id="password">
+				 <field id="max_password_length" translate="label comment" type="text" sortOrder="81" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                     <label>Maximum Password Length</label>
+                    <comment>Please enter a max number to allow password length</comment>
+                </field>
+				</group>
+				</section>
+	</system>
+</config>

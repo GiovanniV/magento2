@@ -1,0 +1,39 @@
+<?php
+/**
+ * Copyright (c) 2019 BORN Group, Inc. All rights reserved
+ * @author Alexander Lukyanov
+ *
+ */
+
+?>
+
+<?php if ($block->getData('viewModel')->getVehicles() && $block->getData('viewModel')->getVehicles()->getTotalCount()>0): ?>
+    <div class="additional-attributes-wrapper table-wrapper">
+        <table class="data table additional-attributes" id="product-vehicles-table">
+            <caption class="table-caption"><?= /* @escapeNotVerified */ __('Supported Vehicles') ?></caption>
+            <tbody>
+            <?php /* @var  \Born\ApplicationXref\Api\Data\ApplicationXrefInterface $applicationXrefItem*/ ?>
+            <?php foreach ($block->getData('viewModel')->getVehicles()->getItems() as $applicationXrefItem):?>
+                <tr>
+                    <td class="col data" data-th="<?= $block->escapeHtml(__($applicationXrefItem->getStreetLegal())) ?>"><?= $block->escapeHtml(__($applicationXrefItem->getStreetLegal())) ?></td>
+                    <td class="col data" data-th="<?= $block->escapeHtml(__($applicationXrefItem->getEoNumber())) ?>"><?= $block->escapeHtml(__($applicationXrefItem->getEoNumber())) ?></td>
+                    <td class="col data" data-th="<?= $block->escapeHtml(__($applicationXrefItem->getTuvStatus())) ?>"><?= $block->escapeHtml(__($applicationXrefItem->getTuvStatus())) ?></td>
+
+                </tr>
+            <?php endforeach; ?>
+            <?php foreach ($block->getData('viewModel')->getApplicationXref()->getItems() as $item):?>
+            <?php /* @var  \Born\VehicleSearch\Api\Data\VehicleSearchInterface $item*/ ?>
+                <tr>
+                    <td class="col data" data-th="<?= $block->escapeHtml(__($item->getMake())) ?>"><?= $block->escapeHtml(__($item->getMake())) ?></td>
+                    <td class="col data" data-th="<?= $block->escapeHtml(__($item->getModel())) ?>"><?= $block->escapeHtml(__($item->getModel())) ?></td>
+                    <td class="col data" data-th="<?= $block->escapeHtml(__($item->getYear())) ?>"><?= $block->escapeHtml(__($item->getYear())) ?></td>
+                    <td class="col data" data-th="<?= $block->escapeHtml(__($item->getEngineSizeL())) ?>"><?= $block->escapeHtml(__($item->getEngineSizeL())) ?></td>
+                    <td class="col data" data-th="<?= $block->escapeHtml(__($item->get())) ?>"><?= $block->escapeHtml(__($item->getEngineSizeL())) ?></td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+<?php else: ?>
+    <?= /* @escapeNotVerified */ __('No vehicles found for this part') ?>
+<?php endif; ?>

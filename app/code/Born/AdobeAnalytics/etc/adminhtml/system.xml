@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="adobe_analytics" translate="label" sortOrder="60">
+            <label>Adobe Analytics</label>
+        </tab>
+        <section id="adobe_analytics" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Tagging Configuration</label>
+            <tab>adobe_analytics</tab>
+            <resource>Born_AdobeAnalytics::tagging</resource>
+            <group id="general_settings" translate="label" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Settings</label>
+                <!--<field id="wapSection" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                    <label>WAP Local Code</label>
+                </field>-->
+                <!--<field id="wapLocalCode_mapping" translate="label" sortOrder="40" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
+                    <label>Overlay Sort Order</label>
+                    <frontend_model>Born\AdobeAnalytics\Block\Adminhtml\System\Config\Form\Field\LocaleMapping</frontend_model>
+                    <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                </field>-->
+                <field id="script" translate="label" type="textarea" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Adobe Analytics Code</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

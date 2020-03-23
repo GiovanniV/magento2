@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <adobe_analytics>
+            <general_settings>
+                <wapSection>realsense</wapSection>
+                <wapLocalCode_mapping><![CDATA[{"_1546274382566_566":{"locale":"en_US","cd2":"us-en"},"_1546274383278_278":{"locale":"ja_JP","cd2":"jp-ja"},"_1546274384039_39":{"locale":"de_DE","cd2":"de-de"},"_1546274386692_692":{"locale":"ko_KR","cd2":"kr-ko"}}]]></wapLocalCode_mapping>
+            </general_settings>
+        </adobe_analytics>
+    </default>
+</config>

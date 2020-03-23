@@ -1,0 +1,61 @@
+<EntitiesDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" ID="SM3020b954d5c8e3f3d25e6554096c8f9f36ca4f783e">
+    <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:SignedInfo>
+            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+            <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+            <ds:Reference URI="#SM3020b954d5c8e3f3d25e6554096c8f9f36ca4f783e">
+                <ds:Transforms>
+                    <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                    <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                </ds:Transforms>
+                <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                <ds:DigestValue>NsW255T6ekm9NE1gt3c/4IxuZWA=</ds:DigestValue>
+            </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue>
+            aIjy9wm+zuHk53S/F/spik+ffLS8f7Fy/+uCN1TqrIn8uxpinEx5ktr1GLU9zQde67p+E4Rxlxg1
+            aPaK43FmWoiP7885mHVVDunZGD4ueypfkrggkgMu0Xk24sJKCGaTW6gPsbs6cmK2y0NTlYN6Jzgq
+            mq2Td2wcMcBZKHMTP2YU4QlJ5g+YK6FTArwVkQepB9JF88Lv2F2NmYl6+/lPOELr+1nV9a0fzSuM
+            zK+uNR93UHu9ZxWz5QhFN3mzF1hYvpx6Aup6noSqSjx98zeAXp0sSF8HC5pnsFG1AdCCAg1ZQw1m
+            1y8q1DBzSAOEbPVKUTTjWe0ltKbUDI89oGmbcA==
+        </ds:SignatureValue>
+        <ds:KeyInfo>
+            <ds:X509Data>
+                <ds:X509Certificate>
+                    MIIDITCCAgmgAwIBAgIJAKwwAL1FE5oJMA0GCSqGSIb3DQEBBQUAMCcxJTAjBgNVBAMMHHNmZWRl
+                    cmF0aW9ucHJlcHJvZC5pbnRlbC5jb20wHhcNMTUwMzA1MTczOTQzWhcNMjUwMzA1MTczOTQzWjAn
+                    MSUwIwYDVQQDDBxzZmVkZXJhdGlvbnByZXByb2QuaW50ZWwuY29tMIIBIjANBgkqhkiG9w0BAQEF
+                    AAOCAQ8AMIIBCgKCAQEAoJxTo+F0/e+Qss/RmlErMMWDnYC5c/6sEYpSmCYrb49a0zShAmGhsYyq
+                    1+ZzvPCJ0bp4EipsJ6Zh9odj7QgXjfamo64Xk4LITb6PeoZrdf9LbH5GvI0NEvfti/rEQiD+Gwvl
+                    0KpZaYE6TGcEmssVzZrYtZPfTN1Htcrc+h04Fk+Dg5HPtzd6r8JoI1Xj0XsHFEARvqIP1Gif1A54
+                    +cx5GEF4t8iHDWhxzuGU7mgnIiCUJMZZci7MNVNB+gjP89hi+bo9errkjelx1EYfaiWbuK38VM6N
+                    bHmltsiiTlVdDt3z/AjFkEnm+SNOsyOzhTa1MA4fhSI0EzoYPIG1rhxZLQIDAQABo1AwTjAdBgNV
+                    HQ4EFgQUAqzaFL6jllIjgRUUS/nMmOOR9gMwHwYDVR0jBBgwFoAUAqzaFL6jllIjgRUUS/nMmOOR
+                    9gMwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOCAQEAEWA3tJrVJEasQUAxzwrNGsNOWa/M
+                    hEtaHSp19Oxx6UPeILcPA+iRak8Dtbycp1a35fB4DOu6oKK8iaeDseo8xK/BVYK1iouzlXamUHTB
+                    LYw+T0shf8VXn9GZy13+stdGjvNq5zPHMYdz8E0GSC6wJp4rElEYxpCZ3+EsCXO+3Cmx2GRTm+ky
+                    4Nru7ePbNf8zic2vY8MNkXX3YNNQr2BmLwgEAu3P94Kiju42JhpQTR5eK7DY8ThJltNIXbx7FK+Y
+                    NGX5oW+tosR3LaMvnPZJjOahmHpD/HcAzei08yrG0u5fYWH4+SopzC7J94185EZ1tbCS8C21GLCn
+                    rD1AdNKlZw==
+                </ds:X509Certificate>
+            </ds:X509Data>
+        </ds:KeyInfo>
+    </ds:Signature><EntityDescriptor ID="SM285db95b52a8a0eed42008aa66a84aa73a93fc4cf6" entityID="sepmp_preprod">
+    <IDPSSODescriptor ID="SMfba556c7079da735fd6560d5a38efcfc485fa92bbe" WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <KeyDescriptor use="signing">
+            <ns1:KeyInfo xmlns:ns1="http://www.w3.org/2000/09/xmldsig#" Id="SM3a4d166d051a12941067ed52495ed90f3dfaa8566b">
+                <ns1:X509Data>
+                    <ns1:X509IssuerSerial>
+                        <ns1:X509IssuerName>CN=sfederationpreprod.intel.com</ns1:X509IssuerName>
+                        <ns1:X509SerialNumber>12407417786313447945</ns1:X509SerialNumber>
+                    </ns1:X509IssuerSerial>
+                    <ns1:X509Certificate>MIIDITCCAgmgAwIBAgIJAKwwAL1FE5oJMA0GCSqGSIb3DQEBBQUAMCcxJTAjBgNVBAMMHHNmZWRlcmF0aW9ucHJlcHJvZC5pbnRlbC5jb20wHhcNMTUwMzA1MTczOTQzWhcNMjUwMzA1MTczOTQzWjAnMSUwIwYDVQQDDBxzZmVkZXJhdGlvbnByZXByb2QuaW50ZWwuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoJxTo+F0/e+Qss/RmlErMMWDnYC5c/6sEYpSmCYrb49a0zShAmGhsYyq1+ZzvPCJ0bp4EipsJ6Zh9odj7QgXjfamo64Xk4LITb6PeoZrdf9LbH5GvI0NEvfti/rEQiD+Gwvl0KpZaYE6TGcEmssVzZrYtZPfTN1Htcrc+h04Fk+Dg5HPtzd6r8JoI1Xj0XsHFEARvqIP1Gif1A54+cx5GEF4t8iHDWhxzuGU7mgnIiCUJMZZci7MNVNB+gjP89hi+bo9errkjelx1EYfaiWbuK38VM6NbHmltsiiTlVdDt3z/AjFkEnm+SNOsyOzhTa1MA4fhSI0EzoYPIG1rhxZLQIDAQABo1AwTjAdBgNVHQ4EFgQUAqzaFL6jllIjgRUUS/nMmOOR9gMwHwYDVR0jBBgwFoAUAqzaFL6jllIjgRUUS/nMmOOR9gMwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOCAQEAEWA3tJrVJEasQUAxzwrNGsNOWa/MhEtaHSp19Oxx6UPeILcPA+iRak8Dtbycp1a35fB4DOu6oKK8iaeDseo8xK/BVYK1iouzlXamUHTBLYw+T0shf8VXn9GZy13+stdGjvNq5zPHMYdz8E0GSC6wJp4rElEYxpCZ3+EsCXO+3Cmx2GRTm+ky4Nru7ePbNf8zic2vY8MNkXX3YNNQr2BmLwgEAu3P94Kiju42JhpQTR5eK7DY8ThJltNIXbx7FK+YNGX5oW+tosR3LaMvnPZJjOahmHpD/HcAzei08yrG0u5fYWH4+SopzC7J94185EZ1tbCS8C21GLCnrD1AdNKlZw==</ns1:X509Certificate>
+                    <ns1:X509SubjectName>CN=sfederationpreprod.intel.com</ns1:X509SubjectName>
+                </ns1:X509Data>
+            </ns1:KeyInfo>
+        </KeyDescriptor>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://signinpp.intel.com/Logout"/>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://sfederationpreprod.intel.com/federation2/sp/Magento/SW50ZWxfcmVzYWxzZW5zZVBQ"/>
+    </IDPSSODescriptor>
+</EntityDescriptor>
+</EntitiesDescriptor>

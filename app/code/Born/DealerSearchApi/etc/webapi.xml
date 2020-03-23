@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+	<route method="POST" url="/V1/DealerSearchApi/SaveSearchCategory">
+		<service class="Born\DealerSearchApi\Api\SearchCategoryRepositoryInterface" method="save"/>
+        <resources>
+             <resource ref="Born_DealerSearchApi::search_category_save"/>
+        </resources>
+	</route>
+	<route method="POST" url="/V1/DealerSearchApi/SaveSearchMarketLine">
+		<service class="Born\DealerSearchApi\Api\SearchMarketLineRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="Born_DealerSearchApi::search_market_line_save"/>
+        </resources>
+	</route>
+	
+	<route method="POST" url="/V1/DealerSearchApi/SaveSearchMaster">
+		<service class="Born\DealerSearchApi\Api\SearchMasterRepositoryInterface" method="save"/>
+		<resources>
+		    <resource ref="Born_DealerSearchApi::search_master_save"/>
+		</resources>
+	</route>
+	
+	<route method="POST" url="/V1/DealerSearchApi/SaveSearchProduct">
+		<service class="Born\DealerSearchApi\Api\SearchProductRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="Born_DealerSearchApi::search_product_save"/>
+        </resources>
+	</route>
+	
+	<route method="POST" url="/V1/DealerSearchApi/SaveSearchProductRestrict">
+		 <service class="Born\DealerSearchApi\Api\SearchProductRestrictRepositoryInterface" method="save"/>
+        <resources>
+          <resource ref="Born_DealerSearchApi::search_product_restrict_save"/>
+        </resources>
+	</route>
+
+	<route method="POST" url="/V1/DealerSearchApi/SaveSearchZip">
+	<service class="Born\DealerSearchApi\Api\SearchZipRepositoryInterface" method="save"/>
+        <resources>
+          <resource ref="Born_DealerSearchApi::search_master_save"/>
+        </resources>
+
+		</route>
+	
+</routes>

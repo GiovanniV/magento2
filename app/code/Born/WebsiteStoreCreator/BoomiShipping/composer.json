@@ -1,0 +1,22 @@
+{
+    "name": "born/module-boomishipping",
+    "description": "BMS shipping method dynamically assign value ",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+           {
+            "email": "giovanni.venegas@borngroup.com",
+            "name": "giovanni"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Born\\BoomiShipping\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

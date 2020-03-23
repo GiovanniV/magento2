@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="search" xsi:type="object">Born\Mkdata\Console\Command\SearchCommand</item>
+            </argument>
+        </arguments>
+     </type>
+
+	<type name="Born\Mkdata\Model\Search" shared="false" />
+	<type name="Born\Mkdata\Model\Api" shared="false" />
+	<type name="Born\Mkdata\Helper\Data" shared="false" />
+
+    <preference for="Adyen\Payment\Model\Cron" type="Born\Mkdata\Model\Adyen\Cron" />
+
+    <type name="Born\Mkdata\Logger\Logger">
+        <arguments>
+            <argument name="name" xsi:type="string">mkdata</argument>
+            <argument name="handlers"  xsi:type="array">
+                <item name="system" xsi:type="object">Born\Mkdata\Logger\Handler</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

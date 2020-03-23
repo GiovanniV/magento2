@@ -1,0 +1,22 @@
+{
+    "name": "born/module-vinsearch",
+    "description": "VIN Search base module",
+    "type": "magento2-module",
+    "license": "https://www.borngroup.com/ Private",
+    "authors": [
+        {
+            "email": "support@borngroup.com",
+            "name": "Born"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Born\\VINSearch\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

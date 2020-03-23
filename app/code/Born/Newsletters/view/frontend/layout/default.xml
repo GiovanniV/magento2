@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright (c) 2018 BORN Group, Inc. All rights reserved
+  ~ @author Matisse Laurel
+  ~
+  -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="footer_connectknn_column">
+        	<block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe.new" before="-" template="Born_Newsletters::subscribe.phtml"/>
+    	</referenceContainer>
+      <!-- <move element="footer_connectknn_column" destination="footer" as="new_alias" after="footer_additionalsearches_column" /> -->
+        <referenceBlock name="form.subscribe" remove="true" />
+    </body>
+</page>

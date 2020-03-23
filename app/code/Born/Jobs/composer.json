@@ -1,0 +1,22 @@
+{
+    "name": "born/module-jobs",
+    "description": "",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "support@borngroup.com",
+            "name": "Born"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Born\\Jobs\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

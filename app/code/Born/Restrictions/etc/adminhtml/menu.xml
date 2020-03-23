@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add action="born_restrictions/entity/index" id="Born_Restrictions::born_restrictions_entity" module="Born_Restrictions" parent="Magento_Integration::system_extensions" resource="Magento_Backend::content" sortOrder="9999" title="Checkout Restrictions"/>
+	</menu>
+</config>

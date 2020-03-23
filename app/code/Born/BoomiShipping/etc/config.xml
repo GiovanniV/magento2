@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<carriers>
+			<boomishipping>
+				<model>Born\BoomiShipping\Model\Carrier\Boomishipping</model>
+				<active>0</active>
+				<title>Boomishipping</title>
+				<name>Boomishipping</name>
+				<price>0.00</price>
+				<specificerrmsg>This shipping method is not available. To use this shipping method, please contact us.</specificerrmsg>
+				<sallowspecific>0</sallowspecific>
+			</boomishipping>
+		</carriers>
+		<boomi_shipping>
+			<general>
+				<api_url><![CDATA[https://knboomidev.fipk.com:9094/ws/simple/queryGetShippingDetails]]></api_url>
+			</general>
+		</boomi_shipping>
+	</default>
+</config>

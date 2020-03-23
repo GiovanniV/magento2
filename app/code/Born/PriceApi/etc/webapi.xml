@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright (c) 2018 BORN Group, Inc. All rights reserved
+  ~ @author Alexander Lukyanov
+  ~
+  -->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/PriceApi/update" method="POST">
+        <service class="Born\PriceApi\Api\PriceManagementInterface" method="update"/>
+        <resources>
+            <resource ref="Born_PriceApi::price_update"/>
+        </resources>
+    </route>
+</routes>

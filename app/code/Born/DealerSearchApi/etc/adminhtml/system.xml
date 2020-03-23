@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright (c) 2018 BORN Group, Inc. All rights reserved
+ * @author Giovanni
+ *
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system> 
+        <section id="locator" translate="label" type="text" sortOrder="1001" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Dealer search</label>
+             <tab>kandn</tab>
+            <resource>Born_DealerSearchApi::manage</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Configuration</label>
+                <field id="top_link" translate="label" type="select" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Link</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="top_link_label" translate="label" type="text" sortOrder="16" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Label of link</label>
+                </field>			
+            </group>
+        </section>
+    </system>
+</config>

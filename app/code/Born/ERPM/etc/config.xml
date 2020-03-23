@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <erpm>
+            <general_settings>
+                <api_url>https://eip-generic-proxy1-dev.us-w2.cloudhub.io/erpm-rest/V1/</api_url>
+                <api_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <password backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+            </general_settings>
+            <subscription>
+                <engagement_code>Intel_RealSense</engagement_code>
+                <subscription_code><![CDATA[{"_1546900334722_722":{"SubscriptionCode":"Intel_RealSense_Sub1","SubscriptionName":"News and Blog Updates"},"_1546900335289_289":{"SubscriptionCode":"Intel_RealSense_Sub2","SubscriptionName":"Hardware and Software Updates"},"_1546900335753_753":{"SubscriptionCode":"Intel_RealSense_Sub3","SubscriptionName":"Promotions and Offers"},"_1546900336536_536":{"SubscriptionCode":"Intel_RealSense_Sub4","SubscriptionName":"Customer Surveys"},"_1546900338253_253":{"SubscriptionCode":"Intel_RealSense_Sub5","SubscriptionName":"Webinar Information"},"_1546900363004_4":{"SubscriptionCode":"Intel_RealSense_Sub6","SubscriptionName":"Events"}}]]></subscription_code>
+            </subscription>
+        </erpm>
+    </default>
+</config>

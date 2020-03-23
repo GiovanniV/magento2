@@ -1,0 +1,181 @@
+.locator-index-view {
+	.page-main {
+		>.page-title-wrapper {
+			.page-title {
+				display: none;
+			}
+		}
+	}
+}
+.store-list-container {
+	clear: both;
+	overflow: hidden;
+	* {
+		box-sizing: border-box;
+	}
+	.row {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	.form-group {
+		width: 100%;
+		float: left;
+		margin-bottom: 10px;
+	}
+	.store-list {
+		border: 1px solid #ccc;
+		padding: 10px 15px;
+		margin-bottom: 15px;
+		h3 {
+			border-bottom: 1px solid #ccc;
+		}
+		.items {
+			max-height: 600px;
+			overflow: auto;
+			li {
+				border: 1px solid #ccc;
+				padding: 10px 0;
+				overflow: hidden;
+			}
+		}
+	}
+	.input-text {
+		&::-webkit-input-placeholder {
+			color: #c9c9c9;
+		}
+		&::-moz-placeholder {
+			color: #c9c9c9;
+		}
+		&:-ms-input-placeholder {
+			color: #c9c9c9;
+		}
+	}
+	.search-form {
+		border: 1px solid #ccc;
+		float: left;
+		padding: 10px;
+		margin-bottom: 30px;
+		width: 100%;
+		h2 {
+			border-bottom: 1px solid #ccc;
+			margin-bottom: 20px;
+			padding-bottom: 5px;
+		}
+	}
+}
+#store-list-map {
+	height: 650px;
+	width: 100%;
+	border: 1px solid #ccc;
+}
+.items {
+	ul.stores {
+		padding: 0;
+		list-style: none;
+	}
+}
+.storelocator-details {
+	* {
+		box-sizing: border-box;
+	}
+}
+.store-infor {
+	h4 {
+		margin-top: 0;
+	}
+}
+.map-short-info {
+	font-family: arial;
+	font-size: 12px;
+	max-width: 180px;
+	h3 {
+		font-family: arial;
+		font-size: 15px;
+	}
+	p {
+		margin-bottom: 5px;
+	}
+}
+#map-detail {
+	height: 650px;
+}
+.store-info-detail {
+	.row {
+		clear: both;
+	}
+	.col-sm-3 {
+		float: left;
+	}
+	.col-sm-9 {
+		float: left;
+		padding-left: 5px;
+	}
+	.col-sm-12 {
+		padding: 0;
+	}
+}
+.col-md-4 {
+	float: left;
+	padding: 0 15px;
+}
+.col-md-8 {
+	float: left;
+	padding: 0 15px;
+}
+.col-md-6 {
+	float: left;
+	padding: 0 15px;
+}
+.col-md-5 {
+	float: left;
+	padding: 0 15px;
+}
+.col-md-7 {
+	float: left;
+	padding: 0 15px;
+}
+.col-sm-4 {
+	padding: 0 15px;
+}
+.col-sm-8 {
+	padding: 0 15px;
+}
+.col-sm-6 {
+	padding: 0 15px;
+}
+.col-sm-12 {
+	padding: 0 15px;
+}
+@media (min-width: 768px) {
+	.col-md-4 {
+		width: 33.33%;
+	}
+	.col-md-8 {
+		width: 66.66%;
+	}
+	.col-md-6 {
+		width: 50%;
+	}
+	.col-md-5 {
+		width: 41.66%;
+	}
+	.col-md-7 {
+		width: 58.33%;
+	}
+}
+@media (max-width: 767px) {
+	.col-xs-12 {
+		width: 100%;
+	}
+	ul.stores {
+		.col-sm-4 {
+			width: 33.33%;
+		}
+		.col-sm-8 {
+			width: 66.66%;
+		}
+	}
+	.col-md-7 {
+		width: 100%;
+	}
+}

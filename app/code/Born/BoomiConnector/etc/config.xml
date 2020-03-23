@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright (c) 2018 BORN Group, Inc. All rights reserved
+  ~ @author Alexander Lukyanov
+  ~
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <boomi_authorization>
+            <general>
+                <username>born@knengineering-6WWGFS</username>
+                <password>ab19b8e7-bdcd-4ca1-abcb-ee994cf28b86</password>
+            </general>
+        </boomi_authorization>
+    </default>
+</config>

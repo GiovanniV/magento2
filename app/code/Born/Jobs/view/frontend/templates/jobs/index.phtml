@@ -1,0 +1,50 @@
+<?php
+$modelView =  $block->getData('viewModel');
+$job =  $modelView->getJobById($block->getRequest()->getParam('id'));
+if ($job) {
+    $block->setTitle('K&N Employment Opportunity: ' . $job->getTitle()); ?>
+
+<div id="job-main-detail">
+    <p>
+    <div>
+        <span >Position Title:</span>
+        <span><?= $job->getPosition() ?></span>
+    </div>
+    <div>
+        <span >Reports To:</span>
+        <span><?= $job->getReportsTo() ?></span>
+    </div>
+    <div>
+        <span >Date Position First Opened:</span>
+        <span><?= $job->getOpenDate() ?></span>
+    </div>
+    <div>
+        <span></span>
+        <span><a href="mailto:<?= $modelView->getEmailString($job)?>">
+                Submit Resumé for this Position
+            </a>
+        </span>
+    </div>
+    </p>
+</div>
+<div id="job-additional-details">
+    <h2 class="section_title">
+        Position Description
+    </h2>
+    <span><?= $job->getDescription()?></span>
+    <h2 class="section_title">
+        Experience, Skills, & Education
+    </h2>
+    <span><?= $job->getSkills()?></span>
+    <h2 class="section_title">
+        Additional Qualities Necessary
+    </h2>
+    <span><?= $job->getEducation()?></span>
+</div>
+    <div class="listing_footer">
+        <span id="disclaimer"><?= $job->getDisclaimer() ?></span>
+    </div>
+<?php
+} else {
+                echo '<h2>Invalid Job Id</h2>';
+            }?>

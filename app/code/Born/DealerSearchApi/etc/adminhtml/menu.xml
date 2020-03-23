@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright (c) 2018 BORN Group, Inc. All rights reserved
+ * @author Giovanni
+ *
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+		<add id="Born_DealerSearchApi::DealerSearchApi" title="Dealer Search" module="Born_DealerSearchApi" sortOrder="80" resource="Magento_Backend::born"/>
+        <add id="Born_DealerSearchApi::manage" title="Dealer Search" module="Born_DealerSearchApi" sortOrder="10" parent="Born_DealerSearchApi::DealerSearchApi" action="locator/locator/edit/" resource="Born_DealerSearchApi::locator_manage"/>
+    </menu>
+</config>

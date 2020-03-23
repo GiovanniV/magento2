@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+	<acl>
+		<resources>
+			<resource id="Magento_Backend::admin">
+				<resource id="Born_VehicleSearch::search_criteria" sortOrder="10" title="Vehicle Search">
+					<resource id="Born_VehicleSearch::vehicle_search_save" sortOrder="10" title="Save Vehicle Search"/>
+				</resource>
+			</resource>
+		</resources>
+	</acl>
+</config>

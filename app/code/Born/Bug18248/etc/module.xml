@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright (c) 2018 BORN Group, Inc. All rights reserved
+  ~ @author Alexander Lukyanov
+  ~
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Born_Bug18248" setup_version="2.0.2">
+        <sequence>
+            <module name="Amazon_Core"/>
+            <module name="Amazon_Login"/>
+            <module name="Amazon_Payment"/>
+            <module name="Klarna_Core"/>
+            <module name="Klarna_Ordermanagement"/>
+            <module name="Klarna_Kp"/>
+            <module name="Vertex_Tax"/>
+        </sequence>
+    </module>
+</config>

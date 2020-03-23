@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+	<acl>
+		<resources>
+			<resource id="Magento_Backend::admin">
+				<resource id="Born_Jobs::jobs" sortOrder="10" title="jobs">
+					<resource id="Born_Jobs::jobs_save" sortOrder="10" title="Save jobs"/>
+					<resource id="Born_Jobs::jobs_delete" sortOrder="20" title="Delete jobs"/>
+					<resource id="Born_Jobs::jobs_update" sortOrder="30" title="Update jobs"/>
+					<resource id="Born_Jobs::jobs_view" sortOrder="40" title="View jobs"/>
+				</resource>
+			</resource>
+		</resources>
+	</acl>
+</config>

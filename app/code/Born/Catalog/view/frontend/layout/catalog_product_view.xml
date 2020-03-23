@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright (c) 2019 BORN Group, Inc. All rights reserved
+  ~ @author Alexander Lukyanov
+  ~
+  -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="product.info.details">
+            <block class="Magento\Framework\View\Element\Template" name="vehicle.application.list" as="vehicle_application_list" template="Born_Catalog::product/view/vehicle_application_list.phtml" group="detailed_info" after="product.attributes">
+                <arguments>
+                    <argument translate="true" name="title" xsi:type="string">Vehicles List</argument>
+                    <argument name="viewModel" xsi:type="object">Born\Catalog\ViewModel\VehicleApplicationList</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>

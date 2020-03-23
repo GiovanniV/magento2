@@ -1,0 +1,22 @@
+{
+    "name": "born/module-orderstate",
+    "description": "Creating module to change order state",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+           "name": "giovanni",
+            "email": "giovanni@vanguardsd.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Born\\OrderState\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

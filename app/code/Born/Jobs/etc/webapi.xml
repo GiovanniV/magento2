@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+	<route method="GET" url="/V1/jobSearch/search">
+		<service class="Born\Jobs\Api\JobsRepositoryInterface" method="getList"/>
+		<resources>
+			<resource ref="Born_Jobs::jobs_view"/>
+		</resources>
+	</route>
+	<route method="GET" url="/V1/jobSearch/:jobsId">
+		<service class="Born\Jobs\Api\JobsRepositoryInterface" method="getById"/>
+		<resources>
+			<resource ref="Born_Jobs::jobs_view"/>
+		</resources>
+	</route>
+	<route method="PUT" url="/V1/jobSearch/:jobsId">
+		<service class="Born\Jobs\Api\JobsRepositoryInterface" method="save"/>
+		<resources>
+			<resource ref="Born_Jobs::jobs_update"/>
+		</resources>
+	</route>
+	<route method="DELETE" url="/V1/jobSearch/:jobsId">
+		<service class="Born\Jobs\Api\JobsRepositoryInterface" method="deleteById"/>
+		<resources>
+			<resource ref="Born_Jobs::jobs_delete"/>
+		</resources>
+	</route>
+	<route method="POST" url="/V1/jobSearch/save">
+		<service class="Born\Jobs\Api\SaveManagementInterface" method="postSave"/>
+		<resources>
+			<resource ref="anonymous"/>
+		</resources>
+	</route>
+</routes>
